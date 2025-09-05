@@ -45,15 +45,15 @@
   }
   
   .stat-card {
-    @apply card hover:shadow-lg transition-all duration-250 ease-in-out cursor-pointer;
+    @apply card hover:shadow-lg transition-all duration-200 ease-in-out cursor-pointer;
   }
 
   .platform-card {
-    @apply card hover:scale-105 transition-all duration-250 ease-in-out cursor-pointer;
+    @apply card hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer;
   }
 
   .learning-card {
-    @apply card hover:shadow-lg transition-all duration-250 ease-in-out;
+    @apply card hover:shadow-lg transition-all duration-200 ease-in-out;
   }
 
   .insight-chart {
