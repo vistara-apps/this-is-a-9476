@@ -89,3 +89,4 @@ jobs:
             \n\n🏗️ The application built successfully with no errors.
             \n\n⚠️ **Note:** Vercel deployment is not configured. To enable automatic deployments, add the required Vercel secrets to this repository.`
           });
+
