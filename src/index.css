@@ -10,23 +10,61 @@
   body {
     background-color: theme('colors.bg');
     color: theme('colors.text-primary');
+    font-weight: 400;
+    line-height: 1.75;
+  }
+
+  h1 {
+    @apply text-6xl font-extrabold;
+  }
+  
+  h2, h3 {
+    @apply text-3xl font-bold;
+  }
+  
+  .caption {
+    @apply text-sm font-medium;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-medium transition-colors;
+    @apply bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-medium transition-all duration-150 ease-in-out;
   }
   
   .btn-secondary {
-    @apply bg-surface hover:bg-surface/80 text-text-primary border border-border px-4 py-2 rounded-md font-medium transition-colors;
+    @apply bg-surface hover:bg-surface/80 text-text-primary border border-border px-4 py-2 rounded-md font-medium transition-all duration-150 ease-in-out;
+  }
+
+  .btn-accent {
+    @apply bg-accent hover:bg-accent/90 text-white px-4 py-2 rounded-md font-medium transition-all duration-150 ease-in-out;
   }
   
   .card {
-    @apply bg-surface border border-border rounded-lg p-4 shadow-card;
+    @apply bg-surface border border-border rounded-lg p-6 shadow-card animate-fade-in;
   }
   
   .stat-card {
-    @apply card hover:bg-surface/80 transition-colors cursor-pointer;
+    @apply card hover:shadow-lg transition-all duration-250 ease-in-out cursor-pointer;
+  }
+
+  .platform-card {
+    @apply card hover:scale-105 transition-all duration-250 ease-in-out cursor-pointer;
+  }
+
+  .learning-card {
+    @apply card hover:shadow-lg transition-all duration-250 ease-in-out;
+  }
+
+  .insight-chart {
+    @apply card;
+  }
+
+  .dashboard-layout {
+    @apply max-w-6xl mx-auto px-4;
+  }
+
+  .grid-12 {
+    @apply grid grid-cols-12 gap-4;
   }
 }
